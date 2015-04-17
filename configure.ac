@@ -3,8 +3,12 @@
 
 AC_PREREQ([2.69])
 AC_INIT([emitter], [0.1], [bugs@chancepants.com])
-AC_CONFIG_SRCDIR([emitter.cpp])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_FILES([
+                 Makefile
+                 src/Makefile
+                 ])
 
 # Checks for programs.
 AC_PROG_CXX
