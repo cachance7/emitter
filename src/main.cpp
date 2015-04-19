@@ -1,5 +1,5 @@
 #include <iostream>
-#include "emitter.h"
+#include "emitter/emitter.h"
 
 int main(int argc, char **argv){
     if(argc > 1){

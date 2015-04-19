@@ -1,4 +1,4 @@
-bin_PROGRAMS = emitter
-emitterdir = emdir
-emitter_HEADERS = emitter.h
-emitter_SOURCES = main.cpp emitter.cpp
+bin_PROGRAMS = emtest
+emtest_SOURCES = main.cpp
+emtest_LDADD = emitter/libemitter.la
+SUBDIRS = emitter
