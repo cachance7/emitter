@@ -11,6 +11,10 @@ namespace MagicStuff{
         public:
             Emitter();
             Emitter(int secretNumber);
+            Emitter(const Emitter& other); // copy
+            Emitter(Emitter&& other); // move
+            Emitter& operator=(const Emitter&);
+            Emitter& operator=(Emitter&&);
             ~Emitter();
             void emit(char *s);
         private:
